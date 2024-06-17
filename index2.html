@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>시나모루.com</title>
+    <meta charset="utf-8" />
+    <link href="styles.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div class="navbar">
+      <ul>
+        <li class = "sdms-font"><a href="price.html"><font size=7>가격표</font></a></li>
+        <li class = "sdms-font"><a href="duo.html"><font size=7>미소녀와데이트</font></a></li>
+        <li class = "sdms-font"><a href="review.html"><font size=7>후기</font></a></li>
+      </ul>
+    </div>
+    
+    
+
+    <img class="hero_header" src="test2.png">
+    <h1>Our new Products</h1>
+
+    <div class="footer">
+      <img id="btnPlay" src="music.jpg">
+      <button id="btnStop">음악 정지</button>
+      <a href="https://open.kakao.com/o/sfXfDhxg" target="_blank">
+        <img src="gif.gif">
+      </a>
+
+      </div>
+<script>
+    const myAudio = new Audio();
+    const btnStop = document.getElementById("btnStop");
+
+    myAudio.src = "music.mp3";
+
+    myAudio.play();
+
+    const btnPlay = document.getElementById("btnPlay");
+        // 재생 버튼
+        btnPlay.onclick = function () {
+        myAudio.play();
+    }
+    btnStop.onclick = function () {
+        myAudio.pause();
+    }
+</script>
+</html>
